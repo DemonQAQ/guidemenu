@@ -1,0 +1,76 @@
+guideList:
+    common:
+        icon:
+            defaultPath: "路径1"
+            checkedPath: "路径1"
+        list:
+            基础教学1:
+                secondTitle: "副标题"
+                texture:
+                  - "路径1"
+                  - "路径2"
+                  - "路径3"
+                text:
+                  - 123
+                  - 456
+                  - 789
+            基础教学2:
+                secondTitle: "副标题"
+                texture:
+                  - "路径1"
+                  - "路径2"
+                  - "路径3"
+                text:
+                  - 123
+                  - 456
+                  - 789
+    combat:
+        icon:
+            defaultPath: "路径1"
+            checkedPath: "路径1"
+        list:
+            基础教学1:
+                secondTitle: "副标题"
+                texture:
+                  - "路径1"
+                  - "路径2"
+                  - "路径3"
+                text:
+                  - 123
+                  - 456
+                  - 789
+            基础教学2:
+                secondTitle: "副标题"
+                texture:
+                  - "路径1"
+                  - "路径2"
+                  - "路径3"
+                text:
+                  - 123
+                  - 456
+                  - 789
+    award:
+        icon:
+            defaultPath: "路径1"
+            checkedPath: "路径1"
+        list:
+            基础教学1:
+                secondTitle: "副标题"
+                texture:
+                  - "路径1"
+                  - "路径2"
+                  - "路径3"
+                text:
+                  - 123
+                  - 456
+                  - 789
+            基础教学2:
+                secondTitle: "副标题"
+                texture:
+                  - "路径1"
+                  - "路径2"
+                  - "路径3"
+                text:
+                  - 123
+                  - 456
+                  - 789

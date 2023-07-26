@@ -1,0 +1,126 @@
+guideTip:
+  options:
+    startX: "w*0"
+    startY: "h*0"
+    escCancel: true
+  left:
+    type: button
+    enable: true
+    defaultPath: 'local<->textures/help/left.png'
+    hoverPath: 'local<->textures/help/left_down.png'
+    locationX: "w*20/1920"
+    locationY: "h*510/1080"
+    locationZ: "5"
+    width: "w*40/1920"
+    height: "h*60/1080"
+  right:
+    type: button
+    enable: true
+    defaultPath: 'local<->textures/help/right.png'
+    hoverPath: 'local<->textures/help/right_down.png'
+    locationX: "w*1860/1920"
+    locationY: "h*510/1080"
+    locationZ: "5"
+    width: "w*40/1920"
+    height: "h*60/1080"
+  exit:
+    type: button
+    enable: false
+    defaultPath: 'local<->textures/backpack/exit.png'
+    hoverPath: 'local<->textures/backpack/exit_down.png'
+    clickSound: 'germmod:按钮_按下'
+    locationX: "w*1816/1920"
+    locationY: "h*16/1080"
+    locationZ: "5"
+    width: "w*88/1920"
+    height: "h*88/1080"
+    swallow: true
+    interactCooldown: 100
+    clickDos:
+      - "open<->null"
+  bg:
+    type: 0
+    enable: true
+    path: 'local<->textures/help/normalbg.png'
+    locationX: "0"
+    locationY: "0"
+    locationZ: "0"
+    width: "w"
+    height: "h"
+  texture:
+    type: 0
+    enable: true
+    path: 'local<->textures/引导/战斗/1.png'
+    locationX: "w*480/1920"
+    locationY: "h*226/1080"
+    locationZ: "5"
+    width: "w*960/1920"
+    height: "h*540/1080"
+  title:
+    type: label
+    enable: true
+    align: "center"
+    scale: '1'
+    font: "simhei"
+    fontSize: 36
+    stroke: 0.2
+    strokeColor: 0xFFFFFFFF
+    shadow: false
+    lineSpace: '0'
+    texts:
+      - "标题"
+    locationX: "w*959/1920"
+    locationY: "h*120/1080"
+    locationZ: "5"
+  secondTitle:
+    type: label
+    enable: true
+    align: "center"
+    scale: '1'
+    font: "simhei"
+    fontSize: 18
+    stroke: 0
+    strokeColor: 0xFF000001
+    shadow: false
+    lineSpace: '0'
+    texts:
+      - "副标题"
+    locationX: "w*959/1920"
+    locationY: "h*180/1080"
+    locationZ: "5"
+  label1:
+    type: label
+    enable: true
+    align: "center"
+    scale: '1'
+    font: "simhei"
+    fontSize: 22
+    stroke: 0
+    strokeColor: 0xFF000001
+    shadow: false
+    lineSpace: '0'
+    texts:
+      - "许多怪物都拥有一些特殊技能。"
+      - "当怪物使用这些技能时会进入特殊状态。"
+      - ""
+    locationX: "w*959/1920"
+    locationY: "h*832/1080"
+    locationZ: "30"
+  canvas:
+    type: canvas
+    enable: true
+    width: 'w'
+    height: 'h'
+    locationX: '0'
+    locationY: '0'
+    locationZ: "4"
+    relativeParts:
+      starTemplate:
+        type: 0
+        enable: false
+        path: 'local<->textures/help/tipslot.png'
+        locationX: "w*942/1920"
+        locationY: "h*782/1080"
+        locationZ: "4"
+        width: "w*36/1920"
+        height: "h*36/1080"

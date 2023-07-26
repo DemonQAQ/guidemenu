@@ -1,0 +1,202 @@
+helpguide:
+  options:
+    startX: "w*0"
+    startY: "h*0"
+    escCancel: false
+  bg:
+    type: 0
+    enable: true
+    path: 'local<->textures/help/bg.png'
+    locationX: "0"
+    locationY: "0"
+    locationZ: "0"
+    width: "w"
+    height: "h"
+  texture:
+    type: 0
+    enable: true
+    path: 'local<->textures/help/texture_tip.png'
+    locationX: "w*764/1920"
+    locationY: "h*156/1080"
+    locationZ: "1"
+    width: "w*960/1920"
+    height: "h*540/1080"
+  textureFrame:
+    type: 0
+    enable: true
+    path: 'local<->textures/help/texture_tip.png'
+    locationX: "w*764/1920"
+    locationY: "h*156/1080"
+    locationZ: "2"
+    width: "w*960/1920"
+    height: "h*540/1080"
+  tip:
+    type: label
+    enable: true
+    align: "center"
+    scale: '1'
+    font: "simhei"
+    fontSize: 32
+    stroke: 0
+    strokeColor: 0xFF000001
+    shadow: false
+    lineSpace: '0'
+    splitWidth: "w*1032/1920"
+    texts:
+      - "测测测测"
+    locationX: "w*1243/1920"
+    locationY: "h*720/1080"
+    locationZ: "2"
+  searchNo:
+    type: label
+    enable: false
+    align: "center"
+    scale: '1'
+    font: "simhei"
+    fontSize: 20
+    stroke: 0
+    strokeColor: 0xFF000001
+    shadow: false
+    lineSpace: '0'
+    splitWidth: "w*1032/1920"
+    texts:
+      - "没有找到哦，换个名字试试吧。"
+    locationX: "w*298/1920"
+    locationY: "h*243/1080"
+    locationZ: "2"
+    #输入框组件
+  #该索引名（下面第一行的名称）仅为示例，请在正式配置时进行修改，每个组件的索引名均不可重复！！
+  input:
+    type: input
+    enable: true
+    autoClear: true
+    replaceColor: true
+    #是否开启默认的背景 默认为true
+    background: false
+    #在输入框内没有字的时候预览
+    preview: '§f搜索此分类内的教程...'
+    #限制输入的字符长度 默认为 32
+    limit: 32
+    #是否作为焦点 默认为 false
+    focus: false
+    permanentFocus: false
+    sync: false
+    input: ''
+    swallow: true
+    invalid: false
+    width: "w*476/1920"
+    height: "h*56/1080"
+    locationX: "w*92/1920"
+    locationY: "h*150/1080"
+    locationZ: "1"
+  next_left:
+    type: button
+    enable: false
+    defaultPath: 'local<->textures/help/nextButton.png'
+    hoverPath: 'local<->textures/help/nextButton_down.png'
+    clickSound: 'germmod:按钮_按下'
+    locationX: "w*728/1920"
+    locationY: "h*961/1080"
+    locationZ: "4"
+    width: "w*260/1920"
+    height: "h*83/1080"
+    swallow: true
+    interactCooldown: 100
+    font: "simhei"
+    fontSize: 32
+    stroke: 0
+    strokeColor: 0xFF000001
+    omitWidth: "w*0.2"
+    texts:
+      - "&l#FFF2D683上一条"
+  next_right:
+    type: button
+    enable: false
+    defaultPath: 'local<->textures/help/nextButton.png'
+    hoverPath: 'local<->textures/help/nextButton_down.png'
+    clickSound: 'germmod:按钮_按下'
+    locationX: "w*1500/1920"
+    locationY: "h*961/1080"
+    locationZ: "4"
+    width: "w*260/1920"
+    height: "h*83/1080"
+    swallow: true
+    interactCooldown: 100
+    align: "center"
+    font: "simhei"
+    fontSize: 32
+    stroke: 0
+    strokeColor: 0xFF000001
+    omitWidth: "w*0.2"
+    texts:
+      - "&l#FFF2D683下一条"
+  tipSlotTemplate:
+    type: 0
+    enable: false
+    path: 'local<->textures/help/tipslot.png'
+    locationX: "w*1226/1920"
+    locationY: "h*981/1080"
+    locationZ: "1"
+    width: "w*36/1920"
+    height: "h*36/1080"
+  bannerTemplate:
+    type: checkbox
+    enable: false
+    defaultPath: 'local<->textures/help/award.png'
+    hoverPath: 'local<->textures/help/award_down.png'
+    checkedPath: "local<->textures/help/award_down.png"
+    clickSound: 'germmod:按钮_按下'
+    checked: false
+    locationX: "w*1180/1920"
+    locationY: "h*0"
+    locationZ: "0"
+    width: "w*128/1920"
+    height: "h*120/1080"
+    swallow: true
+    realHover: false
+  buttonList:
+    type: scroll
+    enable: true
+    width: 'w*548/1920'
+    height: 'h*856/1080'
+    locationX: 'w*24/1920'
+    locationY: 'h*204/1080'
+    relative: true
+    scrollDraggable: true
+    sliderV:
+      type: 3
+      defaultPath: 'local<->textures/help/scroll.png'
+      hoverPath: 'local<->textures/help/scroll.png'
+      width: "w*16/1920"
+      height: "h*68/1080"
+    locationVX: 'w*529/1920'
+    locationVY: 'h*13/1080'
+    widthV: 'w*16/1920'
+    heightV: 'h*(840-68)/1080'
+    invalidV: false
+    scrollableV: 'auto + 5'
+    scrolledV: '0'
+    scrollableParts:
+      buttonTemplate:
+        type: checkbox
+        enable: false
+        defaultPath: 'local<->textures/help/button.png'
+        hoverPath: 'local<->textures/help/button_cover.png'
+        checkedPath: "local<->textures/help/button_seleted.png"
+        clickSound: 'germmod:按钮_按下'
+        checked: false
+        locationX: "w*4/1920"
+        locationY: "h*4/1080"
+        locationZ: "3"
+        width: "w*516/1920"
+        height: "h*128/1080"
+        swallow: true
+        realHover: true
+        align: "center"
+        font: "simhei"
+        fontSize: 32
+        stroke: 0
+        strokeColor: 0xFF000001
+        omitWidth: "w*0.2"
+        texts:
+          - "&l#FFF2D683测试"

@@ -1,0 +1,9 @@
+name: Guidemenu
+version: '${project.version}'
+main: yy.guidemenu.Guidemenu
+depend:
+  - 'DemonLib'
+  - 'GermPlugin'
+commands:
+  guide:
+    description: "guide info"
