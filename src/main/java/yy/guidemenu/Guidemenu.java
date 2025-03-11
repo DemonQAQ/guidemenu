@@ -15,16 +15,6 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.logging.Logger;
 
-/// TODO: 2023/7/27 将教程从默认全部开放给玩家更改为只能查看解锁后的教程，用/guide show 指令来解锁教程
-/*
-* 注意：
-* 1. 保证GuideData内静态数据和动态数据分离，不要出现n个玩家则拷贝n*guideData数量的静态数据的情况
-* 2. 玩家解锁的教程储存在数据库中，数据库以及一系列通用工具的接口文档:http://47.119.161.172:90/
-* 3. 在帮助界面内右侧图片上方显示每一个教程的副标题。
-* 4. 检查搜索功能，如果未完成或有问题请修复他
-* 5. 参考案例，原神的帮助菜单（按G打开那个）
-* */
-
 public final class Guidemenu extends JavaPlugin
 {
     public static Guidemenu plugin;
@@ -58,10 +48,6 @@ public final class Guidemenu extends JavaPlugin
 
     private void commandInit()
     {
-        //getCommand()方法检查是否在plugin.yml内注册有对应指令
-        //如果注册有就会执行.setExecuter()
-        //setExecuter传入一个刚刚写的执行命令的类的实例
-        //就是告诉服务器注册这个指令，并且在执行的时候触发传入的实例的onCommand()方法
         Objects.requireNonNull(this.getCommand("guide"), "xxxx")
                 .setExecutor(new GuideCommand());
     }
